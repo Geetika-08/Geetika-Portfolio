@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMD PORTFOLIO GEETIKA</title>
+    <script src="https://kit.fontawesome.com/e60fa4e42f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="JMDPortfoliocopy.css">
+</head>
+<body>
+
+
+    <div id="loading">
+        <div class="ball">
+            <div class="face">
+                <div class="eye left">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye right">
+                    <div class="pupil"></div>
+                </div>
+                <div class="mouth"></div>
+            </div>
+        </div>
+    </div>
+    <div id="content" style="display: none;">
+
+
+
+        <div id="musicModal" class="modal">
+            <div class="modal-content">
+
+                
+            </div>
+        </div>
+       
+    
+
+
+
+
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="./contentcopy/pngwing.com-86.png" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header"></i>Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="a">Skills</a></li> -->
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="close_menu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="open_menu()"></i>
+            </nav>
+
+            <div class="header_row">
+
+                <div class="header_col-2">
+                    <div class="header_text">
+                        <h2>Hi, It's me <br><span>Geetika Chopra</span>.</h2>
+                        <p class="h1_hidden"> hj</p>
+                        <p id="typewriter-text">I’m a BTech student in Civil Engineering at NIT Jalandhar.  Alongside my academic journey, I’m developing a strong foundation in coding, web development, structural design using STAAD Pro, and visual design with Canva. My passion for event management has led me to successfully organize and lead various college events, showcasing my leadership and organizational capabilities. I’m eager to bring my diverse skills to collaborative projects and professional opportunities, striving to make a meaningful impact. Let’s connect and explore how we can work together to achieve great things!</p>
+                    </div>
+                </div>
+
+                <div class="header_col-1">
+                    <div class="header"> 
+                        <img src="./contentcopy/WhatsApp_Image_2024-07-20_at_14.26.45-removebg copy.png" alt="">
+                    </div>
+                </div>
+
+        </div>
+    </header>
+    
+    <!-- -----------------------------About------------------------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about_col-1">
+                    <img src="./contentcopy/3.jpg" alt="">
+                </div>
+
+                <div class="about_col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quam laboriosam, ad ab, maiores totam aut neque quod vel dolores, voluptates quidem pariatur. Necessitatibus nobis sapiente vitae, asperiores animi velit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita illo necessitatibus est fuga incidunt earum architecto ullam assumenda laborum sint! Ad veniam nesciunt nihil dolore quasi unde amet vel ut.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-link active-link" data-tab='education' onclick="opentab('education')">Education</p>
+                        <p class="tab-link" data-tab='skills' onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" data-tab='experience' onclick="opentab('experience')">Experience</p>
+                    </div>
+                    
+                    <div class="tab-content active-tab" id="education" >
+                        <ul>
+                            <li><span>College (B.Tech)</span> <br> Dr B R Ambedkar National Institute of Technology Jalandhar</li>
+                            <li><span>Class XII</span> <br> Spring Valley Sr. Sec. School, Barnala</li>
+                            <li><span>Class X</span> <br> Aryabhatta International School, Barnala</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="skills">
+                        <ul>
+                            <li> <h6>Technical Skills</h6>
+                                <ul>
+                                    <li>C++</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>NodeJS</li>
+                                </ul>
+                            </li>
+                            <li> <h6>Soft Skills</h6>
+                                <ul>
+                                    <li>Comunication</li>
+                                    <li>Managment</li>
+                                    <li>Team-Work</li>
+                                    <li>Debating</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>IR</span> <br> 2023-2024</li>
+                            <li><span>Sarc</span> <br> content Writer</li>
+                            <li><span>Tca</span> <br> Canva Designer</li>
+                            <li><span>Ladc</span> <br>Won Debating comp</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------Projects--------------------------------------  -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+
+            <div class="project-list">
+
+                <div class="project">
+                    <img src="contentcopy/Screenshot 2024-07-20 at 4.14.45 PM.png" alt="">
+                    <div class="layer">
+                        <h3>Live Code Editor</h3>
+                        <p>The Live Code Editor offers a real-time coding environment for HTML, CSS, and JavaScript, featuring live preview and syntax highlighting. Enhance your projects with the additional download option, allowing you to save your work locally for offline access or sharing.</p>
+                        <a href="file:///Users/geetika/Desktop/JMGC_Coding/JMDCodePen.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="contentcopy/3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Project-2</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam sit dignissimos earum id aut inventore molestiae voluptate voluptates excepturi et labore neque laborum repellendus, aspernatur saepe. Ut pariatur nostrum eligendi.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="contentcopy/3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Project-3</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam sit dignissimos earum id aut inventore molestiae voluptate voluptates excepturi et labore neque laborum repellendus, aspernatur saepe. Ut pariatur nostrum eligendi.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ----------------------------------------Contact--------------------------------------  -->
+
+    <div id="contact">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="contact-left">
+
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> geetikachopra468@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>+91 7986671297</p>
+
+                    <div class="social-icon">
+                        <a href="www.linkedin.com/in/geetika8"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-solid fa-envelope"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+
+                    <a href="contentcopy/Geetika Resume (1).pdf" id="resume" download class="btn">Download CV</a>
+
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Type Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+    
+
+    <script src="JMDPortfoliocopy.js"></script>
+    
+</body>
+</html>
