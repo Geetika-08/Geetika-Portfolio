@@ -169,12 +169,13 @@ p.h1_hidden{
 .row{
     display: flex;
     flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 
 .about_col-1{
-    flex-basis: 48%;
-    padding-right: 5%;
+    flex-basis: 50%;
+    padding-right: 10%;
 }
 
 .about_col-1 img{
@@ -183,7 +184,7 @@ p.h1_hidden{
 }
 
 .about_col-2{
-    flex-basis: 47%;   
+    flex-basis: 50%;   
 }
 
 .sub-title{
@@ -331,7 +332,12 @@ p.h1_hidden{
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 20px;
+    text-decoration: underline solid white 1px;
+    border-bottom: 2px solid #ffffff; /* Adjust the color and thickness as needed */
+    display: inline-block; /* Ensures the underline is only as wide as the text */
+    padding-bottom: 2px
 }
+
 
 .layer p{
     font-size: 15px;
@@ -348,6 +354,24 @@ p.h1_hidden{
     height: 60px;
     border-radius: 50%;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.layer a:hover {
+    animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+.link-container {
+    display: flex; /* Aligns child elements in a row */
+    gap: 15px; /* Adjusts the spacing between the links */
 }
 
 .project:hover img{
@@ -397,7 +421,7 @@ p.h1_hidden{
     transform: translateY( -5px);
 }
 
-.btn{
+.btn {
     display: inline-block;
     margin: 50px auto;
     width: fit-content;
@@ -408,10 +432,12 @@ p.h1_hidden{
     color: #fff;
     background: #ff004f;
     font-size: 22px;
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth transition for transform and background */
 }
 
-.btn:hover{
-    background: #f62567;
+.btn:hover {
+    transform: translateY(-5px); /* Moves the button up by 5px on hover */
+    background: #311e24; /* Changes background color on hover */
 }
 
 form .btn2{
@@ -528,6 +554,22 @@ nav .fa-solid{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+
+
+    .header_col-2, .header_col-1{
+        flex-basis: 100%;
+    }
+
+    .header_col-1{
+        justify-content: flex-end;
+        width: 50%;
+
+    }
+
+    .header_col-2{
+        font-size: 14px;
+    }
+    
 }
 
 
