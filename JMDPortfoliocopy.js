@@ -82,28 +82,28 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// typewriter 
+// // typewriter 
 
-document.addEventListener("DOMContentLoaded", function() {
-    const textElement = document.getElementById('typewriter-text');
-    const typingSound = new Audio('typewriter-typing-68696.mp3');
+// document.addEventListener("DOMContentLoaded", function() {
+//     const textElement = document.getElementById('typewriter-text');
+//     const typingSound = new Audio('typewriter-typing-68696.mp3');
 
-    const text = textElement.textContent; // Get the original text
-    textElement.textContent = ''; // Clear the text content
+//     const text = textElement.textContent; // Get the original text
+//     textElement.textContent = ''; // Clear the text content
 
-    let index = 0;
+//     let index = 0;
 
-    function type() {
-        if (index < text.length) {
-            textElement.textContent += text.charAt(index);
-            typingSound.play();
-            index++;
-            setTimeout(type, 15); // Adjust typing speed here
-        }
-    }
+//     function type() {
+//         if (index < text.length) {
+//             textElement.textContent += text.charAt(index);
+//             typingSound.play();
+//             index++;
+//             setTimeout(type, 15); // Adjust typing speed here
+//         }
+//     }
 
-    type();
-});
+//     type();
+// });
 
 // var response = prompt("Want To Play Music? (Yes/No)");
 
