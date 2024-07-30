@@ -335,7 +335,7 @@ p.h1_hidden{
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 20px;
-    text-decoration: underline solid white 1px;
+    text-decoration: underline solid white .5px;
     border-bottom: 2px solid #ffffff; /* Adjust the color and thickness as needed */
     display: inline-block; /* Ensures the underline is only as wide as the text */
     padding-bottom: 2px
@@ -343,7 +343,7 @@ p.h1_hidden{
 
 
 .layer p{
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .download{
