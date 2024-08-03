@@ -1,31 +1,115 @@
-var tablinks=document.getElementsByClassName("tab-links");
-var tabcontents=document.getElementsByClassName("tab-contents");
 
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
+var tablink= document.getElementsByClassName("tab-link");
+var tabcontent= document.getElementsByClassName("tab-content");
+
+function opentab(tablinkname,event ){
+
+    for(link of tablink){
+        link.classList.remove("active-link");
     }
 
+    for(content of tabcontent){
+        content.classList.remove("active-tab");
+    }
+    
     event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
+    document.getElementById(tablinkname).classList.add("active-tab");
 }
 
-// function sendEmail(){
-//     Email.send({
-//         Host : "smtp.gmail.com",
-//         Username : "prateeksha8177@gmail.com",
-//         Password : "NottShyy@05",
-//         To : 'prateekshapandey8177@gmail.com',
-//         From : document.getElementById("email").value,
-//         Subject : "This is the subject",
-//         Body : + document.getElementById("text").value
-//         +document.getElementById("email").value
-     
-//         + document.getElementById("message").value
-//     }).then(
-//       message => alert(message)
-//     );
+for (let i = 0; i < tablink.length; i++) {
+    tablink[i].addEventListener("click", function(event) {
+        opentab(this.getAttribute("data-tab"), event);
+    });
+}
+
+
+//POPOUT Transition
+document.addEventListener('DOMContentLoaded', () => {
+    const aboutSection = document.getElementById('about');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutSection.classList.add('visible');
+                observer.unobserve(aboutSection);
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    observer.observe(aboutSection);
+});
+
+
+var sidemenu = document.getElementById("sidemenu");
+
+function open_menu(){
+    sidemenu.style.right="0";
+}
+
+function close_menu(){
+    sidemenu.style.right="-200px";
+}
+
+
+
+const scriptURL = ' https://script.google.com/macros/s/AKfycbyxqADPfiNJWh7l8-pnPsRjgmEGWOOpSa7O6TUbe5yEwDYLjx4WTN8oDO5pkB3U5HhOiw/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+
+
+
+
+
+//   LOADING
+
+document.addEventListener("DOMContentLoaded", function() {
+    var loading = document.getElementById("loading");
+    var content = document.getElementById("content");
+    
+    // Simulate loading delay
+    setTimeout(function() {
+        loading.style.display = "none";
+        content.style.display = "block";
+    }, 1000); // Adjust delay as needed
+});
+
+
+// // typewriter 
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const textElement = document.getElementById('typewriter-text');
+//     const typingSound = new Audio('typewriter-typing-68696.mp3');
+
+//     const text = textElement.textContent; // Get the original text
+//     textElement.textContent = ''; // Clear the text content
+
+//     let index = 0;
+
+//     function type() {
+//         if (index < text.length) {
+//             textElement.textContent += text.charAt(index);
+//             typingSound.play();
+//             index++;
+//             setTimeout(type, 15); // Adjust typing speed here
+//         }
+//     }
+
+//     type();
+// });
+
+// var response = prompt("Want To Play Music? (Yes/No)");
+
+// if (response.toLowerCase() === 'yes') {
+//     playerDiv.style.display = 'flex';
+// } else {
+//     playerDiv.style.display = 'none';
 // }
+
