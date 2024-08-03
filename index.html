@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2eb4565468.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="programming.png" class="logo" alt="logo">
+        <ul id="slidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu('slidemenu')"></i> 
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu('slidemenu')"></i>
+      </nav>
+      <div class="header-text">
+        <p>Frontend Web Devloper</p>
+        <h1>Hi, I'm <span>Prateeksha</span> <br>Pandey</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- about -->
+
+  <div id="about">
+<div class="container">
+  <div class="row">
+    <div class="about-col-1">
+     <img src="Screenshot_20230601-182110_Gallery.jpg">
+    </div>
+    <div class="about-col-2"> 
+       <h1 class="sub-title">About Me</h1>
+       <p>I am Prateeksha Pandey, a sophomore pursuing civil engineering from Dr. BR Ambedkar National Institute of Technology Jalandhar.
+        I hail from Lucknow, Uttar Pradesh. I am skilled in graphic designing and web development with 2 years of experience</p>
+
+       <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('Sills')">Sills</p>
+        <p class="tab-links" onclick="opentab('Education')">Education</p>
+        <p class="tab-links" onclick="opentab('Projects')">Projects </p>
+       </div>
+
+       <div class="tab-contents active-tab " id="Sills" >
+        <ul>
+          <li><span>Frontend web Devlopment</span><br>HTML,CSS,Javascript</li>
+          <li><span>Graphic Designing</span><br>Adobe Photoshop,Adobe Illustrator,Canva</li>
+          <li><span>Comptetive programming</span><br>C,CPP,DSA(with cpp)</li>
+        </ul>
+       </div>
+        
+       <div class="tab-contents " id="Education">
+        <ul>
+          <li><span>8.35CGPA</span><br>Dr. BR Ambedkar National Institute of Technology Jalandhar</li>
+          <li><span>CLASS 10 : 98.4%</span><br>Rani Laxmi Bai School</li>
+          <li><span>CLASS 12 : 92.4%</span><br>Allahabad Public School</li>
+        </ul>
+       </div>
+       <div class="tab-contents " id="Projects">
+        <ul>
+          <li><span>Art Gallery</span><br>I have created this website using HTML, CSS and Javascript</li>
+          <li><span>Portfolio Website</span><br>I have created this website using HTML, CSS and Javascript</li>
+          <!-- <li><span>calculator</span><br>something something</li> -->
+        </ul>
+       </div>
+    </div>
+  </div>
+</div>
+  </div>
+  
+       <!-- services -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Devlopment</h2>
+          <p>I am skilled in HTML, CSS and Javascript</p>
+          <a href="https://github.com/prateeksha17">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>Graphic Design</h2>
+          <p>I have worked on many projects on freelancing sites.</p>
+          <a href="https://www.freelancer.com/hireme/prateekshapande5">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-codepen"></i>
+          <h2>C/C++</h2>
+          <p>I am skilled in these programming languages and I am learning DSA through cpp.</p>
+          <a href="https://www.codechef.com/users/prateeksha_05">Learn more</a>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <!-- portfolio -->
+
+   <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="photo1.jpg">
+          <div class="layer">
+            <h3>Art Gallery Website</h3>
+            <p>I have created Art gallery website using this skill using HTML, CSS and Javascript.</p>
+            <a href="https://github.com/prateeksha17"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+     
+
+      
+        <div class="work">
+          <img src="photo2.jpg">
+          <div class="layer">
+            <h3>Portfolio Website</h3>
+            <p>I have created portfolio website using this skill using HTML, CSS and Javascript.</p>
+            <a href="https://github.com/prateeksha17"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      
+
+     
+        <div class="work">
+          <img src="photo3.jpg">
+          <div class="layer">
+            <h3>c/cpp</h3>
+            <p>
+              I am skilled in these programming languages and I am learning DSA through cpp.
+            </p>
+            <a href="https://www.codechef.com/users/prateeksha_05"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact -->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>prateeksha8177@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i>6387859200</p>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/argh.urgh/"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/prateeksha-pandey-75898223a/"> <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/prateeksha17"> <i class="fa-brands fa-github"></i></a>
+                <a href="https://www.freelancer.com/hireme/prateekshapande5"> <i class="fa-solid fa-dove"></i></a>
+
+              </div>
+              <a href="Resume.pdf" download class="btn " >Download CV</a>
+            </div>
+
+            <div class="contact-right">
+              <form action="https://formspree.io/f/xdovrwqe" method="post">
+                <input id="text" type="text" name="Name" placeholder="Your Name" required>
+                <input id="email" type="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <!-- <script>
+    var sidemeu = document.getElementById("sidemenu")
+
+function openmenu(){
+    sidemeu.style.right = "0";
+
+}
+function closemenu(){
+    sidemeu.style.right =  "-200px";
+}
+   </script> -->
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
