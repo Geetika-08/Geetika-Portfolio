@@ -1,229 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JMD PORTFOLIO GEETIKA</title>
-    <script src="https://kit.fontawesome.com/e60fa4e42f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="JMDPortfoliocopy.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2eb4565468.js" crossorigin="anonymous"></script>
 </head>
-<body>
-
-
-    <div id="loading">
-        <div class="ball">
-            <div class="face">
-                <div class="eye left">
-                    <div class="pupil"></div>
-                </div>
-                <div class="eye right">
-                    <div class="pupil"></div>
-                </div>
-                <div class="mouth"></div>
-            </div>
-        </div>
-    </div>
-    <div id="content" style="display: none;">
-
-
-
-        <div id="musicModal" class="modal">
-            <div class="modal-content">
-
-                
-            </div>
-        </div>
-       
-    
-
-
-
-
-
-    <header id="header">
-        <div class="container">
-            <nav>
-                <img src="./contentcopy/pngwing.com-86.png" alt="">
-                <ul id="sidemenu">
-                    <i class="fa-solid fa-arrow-left" onclick="close_menu()"></i>
-                    <li><a href="#header"></i>Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <!-- <li><a href="a">Skills</a></li> -->
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="open_menu()"></i>
-            </nav>
-
-            <div class="header_row">
-
-                <div class="header_col-2">
-                    <div class="header_text">
-                        <h2>Frontend Developer 
-                        <h1>I'm <span> Geetika Chopra</span>.</h1>
-                        <p class="h1_hidden"> hj</p>
-                    </div>
-                </div>
-
-                <div class="header_col-1">
-                    <div class="header"> 
-                        <img src="./contentcopy/WhatsApp_Image_2024-07-20_at_14.26.45-removebg copy.png" alt="">
-                    </div>
-                </div>
-
-        </div>
-    </header>
-    
-    <!-- -----------------------------About------------------------------ -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-
-                <div class="about_col-1">
-                    <img src="./contentcopy/WhatsApp Image 2024-07-30 at 19.41.23.jpeg" alt="">
-                </div>
-
-                <div class="about_col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p id="typewriter-text">I’m a BTech student in Civil Engineering at NIT Jalandhar.  Alongside my academic journey, I’m developing a strong foundation in coding, web development, structural design using STAAD Pro, and visual design with Canva. My passion for event management has led me to successfully organize and lead various college events, showcasing my leadership and organizational capabilities. I’m eager to bring my diverse skills to collaborative projects and professional opportunities, striving to make a meaningful impact. Let’s connect and explore how we can work together to achieve great things!</p>
-
-                    <div class="tab-title">
-                        <p class="tab-link active-link" data-tab='education' onclick="opentab('education')">Education</p>
-                        <p class="tab-link" data-tab='skills' onclick="opentab('skills')">Skills</p>
-                        <p class="tab-link" data-tab='experience' onclick="opentab('experience')">Experience</p>
-                    </div>
-                    
-                    <div class="tab-content active-tab" id="education" >
-                        <ul>
-                            <li><span>College (B.Tech)</span> <br> Dr B R Ambedkar National Institute of Technology Jalandhar</li>
-                            <li><span>Class XII</span> <br> Spring Valley Sr. Sec. School, Barnala</li>
-                            <li><span>Class X</span> <br> Aryabhatta International School, Barnala</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-content" id="skills">
-                        <ul>
-                            <li> <h6>Technical Skills</h6>
-                                <ul>
-                                    <li>C++</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>NodeJS</li>
-                                </ul>
-                            </li>
-                            <li> <h6>Soft Skills</h6>
-                                <ul>
-                                    <li>Comunication</li>
-                                    <li>Managment</li>
-                                    <li>Team-Work</li>
-                                    <li>Debating</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-content" id="experience">
-                        <ul>
-                            <li><span>IR</span> <br> 2023-2024</li>
-                            <li><span>Sarc</span> <br> content Writer</li>
-                            <li><span>Tca</span> <br> Canva Designer</li>
-                            <li><span>Ladc</span> <br>Won Debating comp</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ----------------------------------------Projects--------------------------------------  -->
-    <div id="projects">
-        <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-
-            <div class="project-list">
-
-                <div class="project">
-                    <img src="contentcopy/WhatsApp Image 2024-07-30 at 20.22.43.jpeg" alt="">
-                    <div class="layer">
-                        <h3>LIVE CODE EDITOR</h3>
-                        <p>The Live Code Editor <strong class="download"> <i> with download </i></strong> option offers a real-time coding environment for HTML, CSS, and JavaScript, featuring live preview and syntax highlighting. Enhance your projects with the additional download option, allowing you to save your work locally for offline access or sharing.</p>
-                        
-                        <div class="link-container">
-                            <a href="https://github.com/Geetika-08/Live-Code-Editor.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <img src="contentcopy/WhatsApp Image 2024-07-30 at 20.23.50.jpeg" alt="">
-                    <div class="layer">
-                        <h3>MY PORTFOLIO</h3>
-                        <p>Explore my professional portfolio website, featuring my expertise in coding, and design. Explore a curated selection of projects, skills, education, and accomplishments that demonstrate her capabilities and achievements in these fields.</p>
-                        <a href="https://github.com/Geetika-08/Geetika-Portfolio.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <img src="contentcopy/WhatsApp Image 2024-07-30 at 20.47.25.jpeg" alt="">
-                    <div class="layer">
-                        <h3>QUIZ GAME</h3>
-                        <p>This C++ quiz game features an interactive interface with challenging questions and real-time feedback. Enjoy a dynamic and engaging experience as you test your knowledge and track your progress through an intuitive design.</p>
-                        <a href="https://github.com/Geetika-08/Quiz-Game.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- ----------------------------------------Contact--------------------------------------  -->
-
-    <div id="contact">
-        <div class="container">
-
-            <div class="row">
-
-                <div class="contact-left">
-
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p class="contact-p"> <i class="fa-solid fa-paper-plane"></i> geetikachopra468@gmail.com</p>
-                    <p class="contact-p"> <i class="fa-solid fa-phone"></i>+91 7986671297</p>
-
-                    <div class="social-icon">
-                        <a href="https://www.linkedin.com/in/geetika8/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <!-- <a href=""><i class="fa-solid fa-envelope"></i></a> -->
-                        <a href="https://github.com/Geetika-08" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-
-                    <a href="contentcopy/Geetika Resume (1).pdf" id="resume" download class="btn">Download CV</a>
-
-                </div>
-
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Type Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-
-    </div>
-    
-
-    <script src="JMDPortfoliocopy.js"></script>
-    
+<body><!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>JMD PORTFOLIO GEETIKA</title>
+      <script src="https://kit.fontawesome.com/e60fa4e42f.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  
+  
+      <div id="loading">
+          <div class="ball">
+              <div class="face">
+                  <div class="eye left">
+                      <div class="pupil"></div>
+                  </div>
+                  <div class="eye right">
+                      <div class="pupil"></div>
+                  </div>
+                  <div class="mouth"></div>
+              </div>
+          </div>
+      </div>
+      <div id="content" style="display: none;">
+  
+  
+  
+          <div id="musicModal" class="modal">
+              <div class="modal-content">
+  
+                  
+              </div>
+          </div>
+         
+      
+  
+  
+  
+  
+  
+      <header id="header">
+          <div class="container">
+              <nav>
+                  <img src="./contentcopy/pngwing.com-86.png" alt="">
+                  <ul id="sidemenu">
+                      <i class="fa-solid fa-arrow-left" onclick="close_menu()"></i>
+                      <li><a href="#header"></i>Home</a></li>
+                      <li><a href="#about">About</a></li>
+                      <!-- <li><a href="a">Skills</a></li> -->
+                      <li><a href="#projects">Projects</a></li>
+                      <li><a href="#resume">Resume</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                  </ul>
+                  <i class="fa-solid fa-bars" onclick="open_menu()"></i>
+              </nav>
+  
+              <div class="header_row">
+  
+                  <div class="header_col-2">
+                      <div class="header_text">
+                          <h2>Frontend Developer 
+                          <h1>I'm <span> Geetika Chopra</span>.</h1>
+                          <p class="h1_hidden"> hj</p>
+                      </div>
+                  </div>
+  
+                  <div class="header_col-1">
+                      <div class="header"> 
+                          <img src="./contentcopy/WhatsApp_Image_2024-07-20_at_14.26.45-removebg copy.png" alt="">
+                      </div>
+                  </div>
+  
+          </div>
+      </header>
+      
+      <!-- -----------------------------About------------------------------ -->
+  
+      <div id="about">
+          <div class="container">
+              <div class="row">
+  
+                  <div class="about_col-1">
+                      <img src="./contentcopy/WhatsApp Image 2024-07-30 at 19.41.23.jpeg" alt="">
+                  </div>
+  
+                  <div class="about_col-2">
+                      <h1 class="sub-title">About Me</h1>
+                      <p id="typewriter-text">I’m a BTech student in Civil Engineering at NIT Jalandhar.  Alongside my academic journey, I’m developing a strong foundation in coding, web development, structural design using STAAD Pro, and visual design with Canva. My passion for event management has led me to successfully organize and lead various college events, showcasing my leadership and organizational capabilities. I’m eager to bring my diverse skills to collaborative projects and professional opportunities, striving to make a meaningful impact. Let’s connect and explore how we can work together to achieve great things!</p>
+  
+                      <div class="tab-title">
+                          <p class="tab-link active-link" data-tab='education' onclick="opentab('education')">Education</p>
+                          <p class="tab-link" data-tab='skills' onclick="opentab('skills')">Skills</p>
+                          <p class="tab-link" data-tab='experience' onclick="opentab('experience')">Experience</p>
+                      </div>
+                      
+                      <div class="tab-content active-tab" id="education" >
+                          <ul>
+                              <li><span>College (B.Tech)</span> <br> Dr B R Ambedkar National Institute of Technology Jalandhar</li>
+                              <li><span>Class XII</span> <br> Spring Valley Sr. Sec. School, Barnala</li>
+                              <li><span>Class X</span> <br> Aryabhatta International School, Barnala</li>
+                          </ul>
+                      </div>
+  
+                      <div class="tab-content" id="skills">
+                          <ul>
+                              <li> <h6>Technical Skills</h6>
+                                  <ul>
+                                      <li>C++</li>
+                                      <li>HTML</li>
+                                      <li>CSS</li>
+                                      <li>JavaScript</li>
+                                      <li>NodeJS</li>
+                                  </ul>
+                              </li>
+                              <li> <h6>Soft Skills</h6>
+                                  <ul>
+                                      <li>Comunication</li>
+                                      <li>Managment</li>
+                                      <li>Team-Work</li>
+                                      <li>Debating</li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </div>
+  
+                      <div class="tab-content" id="experience">
+                          <ul>
+                              <li><span>IR</span> <br> 2023-2024</li>
+                              <li><span>Sarc</span> <br> content Writer</li>
+                              <li><span>Tca</span> <br> Canva Designer</li>
+                              <li><span>Ladc</span> <br>Won Debating comp</li>
+                          </ul>
+                      </div>
+  
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- ----------------------------------------Projects--------------------------------------  -->
+      <div id="projects">
+          <div class="container">
+              <h1 class="sub-title">My Projects</h1>
+  
+              <div class="project-list">
+  
+                  <div class="project">
+                      <img src="contentcopy/WhatsApp Image 2024-07-30 at 20.22.43.jpeg" alt="">
+                      <div class="layer">
+                          <h3>LIVE CODE EDITOR</h3>
+                          <p>The Live Code Editor <strong class="download"> <i> with download </i></strong> option offers a real-time coding environment for HTML, CSS, and JavaScript, featuring live preview and syntax highlighting. Enhance your projects with the additional download option, allowing you to save your work locally for offline access or sharing.</p>
+                          
+                          <div class="link-container">
+                              <a href="https://github.com/Geetika-08/Live-Code-Editor.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="project">
+                      <img src="contentcopy/WhatsApp Image 2024-07-30 at 20.23.50.jpeg" alt="">
+                      <div class="layer">
+                          <h3>MY PORTFOLIO</h3>
+                          <p>Explore my professional portfolio website, featuring my expertise in coding, and design. Explore a curated selection of projects, skills, education, and accomplishments that demonstrate her capabilities and achievements in these fields.</p>
+                          <a href="https://github.com/Geetika-08/Geetika-Portfolio.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                      </div>
+                  </div>
+  
+                  <div class="project">
+                      <img src="contentcopy/WhatsApp Image 2024-07-30 at 20.47.25.jpeg" alt="">
+                      <div class="layer">
+                          <h3>QUIZ GAME</h3>
+                          <p>This C++ quiz game features an interactive interface with challenging questions and real-time feedback. Enjoy a dynamic and engaging experience as you test your knowledge and track your progress through an intuitive design.</p>
+                          <a href="https://github.com/Geetika-08/Quiz-Game.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                      </div>
+                  </div>
+  
+              </div>
+  
+          </div>
+      </div>
+  
+  
+      <!-- ----------------------------------------Contact--------------------------------------  -->
+  
+      <div id="contact">
+          <div class="container">
+  
+              <div class="row">
+  
+                  <div class="contact-left">
+  
+                      <h1 class="sub-title">Contact Me</h1>
+                      <p class="contact-p"> <i class="fa-solid fa-paper-plane"></i> geetikachopra468@gmail.com</p>
+                      <p class="contact-p"> <i class="fa-solid fa-phone"></i>+91 7986671297</p>
+  
+                      <div class="social-icon">
+                          <a href="https://www.linkedin.com/in/geetika8/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                          <!-- <a href=""><i class="fa-solid fa-envelope"></i></a> -->
+                          <a href="https://github.com/Geetika-08" target="_blank"><i class="fa-brands fa-github"></i></a>
+                      </div>
+  
+                      <a href="contentcopy/Geetika Resume (1).pdf" id="resume" download class="btn">Download CV</a>
+  
+                  </div>
+  
+                  <div class="contact-right">
+                      <form name="submit-to-google-sheet">
+                          <input type="text" name="Name" placeholder="Your Name" required>
+                          <input type="email" name="Email" placeholder="Your Email" required>
+                          <textarea name="Message" rows="6" placeholder="Type Your Message"></textarea>
+                          <button type="submit" class="btn btn2">Submit</button>
+                      </form>
+                  </div>
+  
+              </div>
+  
+          </div>
+      </div>
+  
+  
+      </div>
+      
+  
+     
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
