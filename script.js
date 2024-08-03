@@ -82,34 +82,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// // typewriter 
 
-// document.addEventListener("DOMContentLoaded", function() {
-//     const textElement = document.getElementById('typewriter-text');
-//     const typingSound = new Audio('typewriter-typing-68696.mp3');
-
-//     const text = textElement.textContent; // Get the original text
-//     textElement.textContent = ''; // Clear the text content
-
-//     let index = 0;
-
-//     function type() {
-//         if (index < text.length) {
-//             textElement.textContent += text.charAt(index);
-//             typingSound.play();
-//             index++;
-//             setTimeout(type, 15); // Adjust typing speed here
-//         }
-//     }
-
-//     type();
-// });
-
-// var response = prompt("Want To Play Music? (Yes/No)");
-
-// if (response.toLowerCase() === 'yes') {
-//     playerDiv.style.display = 'flex';
-// } else {
-//     playerDiv.style.display = 'none';
-// }
 
