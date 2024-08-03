@@ -80,7 +80,3 @@ document.addEventListener("DOMContentLoaded", function() {
         content.style.display = "block";
     }, 1000); // Adjust delay as needed
 });
-
-
-
-
